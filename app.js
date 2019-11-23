@@ -26,6 +26,8 @@ var demandeRouter =require('./routes/demande');
 var evenementRouter =require('./routes/evenement');
 var reclamationRouter =require('./routes/reclamation');
 var voucherRouter =require('./routes/voucher');
+var ratingRouter = require('./routes/rating');
+var personneRouter= require('./routes/personne');
 
 
 var app = express();
@@ -46,6 +48,9 @@ app.use('/demande', demandeRouter);
 app.use('/reclamation', reclamationRouter);
 app.use('/voucher', voucherRouter);
 app.use('/evenement', evenementRouter);
+app.use('/personne', personneRouter);
+app.use('/rating', ratingRouter);
+
 
 
 
