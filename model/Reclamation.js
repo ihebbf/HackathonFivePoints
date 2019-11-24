@@ -11,14 +11,19 @@ var ReclamationSchema = mongoose.Schema({
         type: String,
         required: true
     },
+    ref:{
+        type: String,
+    },
 
     date: {
         type: Date,
+        default:Date.now(),
         required: true
     },
 
     commission: {
         type: String,
+        default:'aucune',
         required: true
     },
 
@@ -30,6 +35,7 @@ var ReclamationSchema = mongoose.Schema({
 
     etat :{
         type : String,
+        default:'Non traité',
         required : true
 
     }
